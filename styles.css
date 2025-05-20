@@ -1,0 +1,126 @@
+/* styles.css - Food-themed colors and centered content */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff8f0;
+  color: #4e342e;
+  text-align: center;
+}
+
+header {
+  background-color: #8d6e63; /* Chocolate brown */
+  color: #fffde7;
+  padding: 30px 20px;
+}
+
+nav ul.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fffde7;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+nav a:hover {
+  background-color: #d84315; /* Spicy red */
+  border-radius: 5px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff3e0;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(77, 45, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 12px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ffcc80;
+  border-radius: 5px;
+  background-color: #fff8e1;
+}
+
+form button {
+  width: 160px;
+  padding: 12px;
+  background-color: #ff7043; /* Bright orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e64a19;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 3px solid #ffcc80;
+  border-radius: 10px;
+}
+
+video {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #6d4c41;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul.nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  form input, form textarea {
+    width: 90%;
+  }
+}
